@@ -1,8 +1,10 @@
 package com.Proyecto.Nas.Repository;
 
 import com.Proyecto.Nas.Entity.Entrenamiento;
+import java.util.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EntrenamientoRepository extends JpaRepository<Entrenamiento, Long> {
-    Entrenamiento findByNumero(int numero);
+     List<Entrenamiento> findByNumero(int numero);
+
 }
