@@ -6,4 +6,5 @@ import lombok.Data;
 public class JugadorResponseDto {
     private Long id;
     private String nombre;
+    private double puntaje;
 }

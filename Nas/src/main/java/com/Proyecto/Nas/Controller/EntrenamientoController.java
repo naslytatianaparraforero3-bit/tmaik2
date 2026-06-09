@@ -21,4 +21,9 @@ public class EntrenamientoController {
     public ResponseEntity<Object> obtenerTitulares() {
         return ResponseEntity.ok(entrenamientoService.obtenerTitulares());
     }
+
+    @GetMapping("/mostrar")
+    public ResponseEntity<Object> mostrar() {
+        return ResponseEntity.ok(entrenamientoService.mostrar());
+    }
 }

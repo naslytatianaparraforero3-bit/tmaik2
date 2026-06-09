@@ -1,13 +1,12 @@
 package com.Proyecto.Nas.dto;
 
 import lombok.Data;
-
 @Data
-public class ResultadoEntrenamientoResponseDto {
-     private Long id;
+public class EntrenamientoResponseDto {
+    
+    private Long id;
+    
+    private int numero;
 
-    private double potenciaTiro;
-    private double velocidad;
-    private int pasesEfectivos;
-    private double puntaje;
+    private String mensaje;
 }

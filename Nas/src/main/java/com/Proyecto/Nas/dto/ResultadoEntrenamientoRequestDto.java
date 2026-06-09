@@ -1,12 +1,11 @@
 package com.Proyecto.Nas.dto;
 
 import lombok.Data;
+import java.util.List;
 
 @Data
-public class ResultadoEntrenamientoRequestDto {
-
-    private double potenciaTiro;
-    private double velocidad;
-    private int pasesEfectivos;
-    private double puntaje;
+public class EntrenamientoRequestDto {
+        
+    private int numero;
+    private List<JugadorRequestDto> jugadores;
 }
